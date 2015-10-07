@@ -9,13 +9,16 @@
 <body>
 <header>
   <div class='etsyLogo'>Etsy</div>
-  <div class='searchBar'></div>
+  <form class='searchBar'>
+    <input type='search' placeholder='Search for items or shops'/>
+    <button class='searchbtn'>Search</button>
+  </form>
 
   <nav class='navbar right'>
     <ul>
       <li><a href="#">Sell on Etsy</a></li>
       <li><a href="#">Register</a></li>
-      <li><a href="#">Sign in</a></li>
+      <li><a href="#"><span>Sign in</span></a></li>
       <li><a href="#">Cart</a></li>
     </ul>
   </nav>
@@ -33,7 +36,44 @@
     </ul>
   </nav>
 </header>
-  <h1>Hello World</h1>
+
+<aside class='columnLeft'>
+
+<div class='categories'>
+<h5>Show results for:</h5>
+  <ul>
+  <h5>All Categories</h5>
+    <li><a href="#">Home & Living</a></li>
+    <li><a href="#">Art & Collectibles</a></li>
+    <li><a href="#">Weddings</a></li>
+    <li><a href="#">Clothing</a></li>
+    <li><a href="#">Jewelry</a></li>
+    <li><a href="#">Paper & Party Supplies</a></li>
+    <li><a href="#">Accessories</a></li>
+    <li><a href="#">Craft Supplies & Tools</a></li>
+    <li><a href="#">Bags & Purses</a></li>
+    <li><a href="#">Bath & Beauty</a></li>
+    <li><a href="#">Shoes</a></li>
+    <li><a href="#">Books, Movies & Music</a></li>
+    <li><a href="#">Electronics & Accessories</a></li>
+    <li><a href="#">Toys & Games</a></li>
+    <li><a href="#">Pet Supplies</a></li>
+  </ul>
+</div>
+
+<h5>Refine your search</h5>
+
+<div class='itemType'>
+<h5>Item Type</h5>
+  <form class='radioItems'>
+    <input type="radio" name="item" value="All Items">All Items</br>
+    <input type="radio" name="item" value="Handmade">Handmade</br>
+    <input type="radio" name="item" value="Vintage">Vintage</br>
+  </form>
+</div>
+
+</aside>
+
 
   <script src="bower_components/underscore/underscore-min.js"</script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
