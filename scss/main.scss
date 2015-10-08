@@ -1,0 +1,159 @@
+//Colors
+$grayColor: #626262;
+$orangeColor: #F56400;
+$turqColor: #2BA8C6;
+$whiteColor: #fff;
+$ltGray: #CFCBC8;
+
+//Fonts
+$font14: 14px;
+
+//Style
+$textDec: none;
+
+//Width of Containers
+$sideBar: 250px;
+
+body {
+  background: #F5F5F1;
+}
+
+header {
+  position: relative;
+  background: $whiteColor;
+}
+
+hr {
+  height:0; 
+  border:0; 
+  border-top:1px solid $ltGray; 
+}
+
+.headerWrap {
+  margin-top: 25px;
+}
+
+.etsyLogo, 
+.searchBar {
+  float: left;
+}
+
+.etsyLogo {
+  margin-left: 160px;
+  font-size: 27px;
+  color: $orangeColor;
+}
+
+.searchBar {
+  margin-left: 40px;
+  border: 1px solid $ltGray;
+  border-radius: 3px;
+}
+
+.searchField {
+  width: 250px;
+  padding: 6px;
+  border: none;
+}
+
+.searchbtn {
+  float: right;
+  padding: 6px;
+  border: 1px solid #2E98B1;
+  background: $turqColor;
+  color: white;
+}
+
+.navbar.right {
+  margin-right: 0;
+}
+
+.navbar.right ul {
+  margin: 0 0 0 270px;
+  padding: 0;
+  width: 20px;
+  display: inline;
+}
+
+.navbar.right ul li {
+  display: inline;
+  margin-right: 15px;
+  font-size: $font14;
+}
+
+.navbar.right ul li a {
+  text-decoration: $textDec;
+  color: $turqColor;
+}
+
+.navbar.right span {
+  border: 1px solid $turqColor;
+  border-radius: 3px;
+  padding: 8px;
+}
+
+
+.cart {
+  color: $grayColor;
+  font-size: $font14;
+  display: inline;
+  margin-left: 22px;
+}
+
+.navbar.center {
+  margin: 30px 0 0 0;
+}
+
+.navbar.center ul {
+  margin-left: 147px;
+}
+
+.navbar.center ul li {
+  display: inline;
+  margin: 0 7px 0 7px;
+  font-size: $font14;
+}
+
+.navbar.center ul li a {
+  text-decoration: $textDec;
+  color: $grayColor;
+}
+
+.categories {
+  background: $whiteColor;
+  width: $sideBar;
+}
+
+.categories ul li {
+  list-style: none;
+}
+
+.categories ul li a {
+  text-decoration: $textDec;
+  color: $turqColor;
+  font-size: $font14;
+  line-height: 1.5;
+}
+
+.itemType,
+.lowHigh,
+.colorBoxes,
+.orderOptions,
+.shopLocation,
+.regions {
+  background: $whiteColor;
+  width: $sideBar;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

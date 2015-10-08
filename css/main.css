@@ -1,0 +1,106 @@
+body {
+  background: #F5F5F1; }
+
+header {
+  position: relative;
+  background: #fff; }
+
+hr {
+  height: 0;
+  border: 0;
+  border-top: 1px solid #CFCBC8; }
+
+.headerWrap {
+  margin-top: 25px; }
+
+.etsyLogo,
+.searchBar {
+  float: left; }
+
+.etsyLogo {
+  margin-left: 160px;
+  font-size: 27px;
+  color: #F56400; }
+
+.searchBar {
+  margin-left: 40px;
+  border: 1px solid #CFCBC8;
+  border-radius: 3px; }
+
+.searchField {
+  width: 250px;
+  padding: 6px;
+  border: none; }
+
+.searchbtn {
+  float: right;
+  padding: 6px;
+  border: 1px solid #2E98B1;
+  background: #2BA8C6;
+  color: white; }
+
+.navbar.right {
+  margin-right: 0; }
+
+.navbar.right ul {
+  margin: 0 0 0 270px;
+  padding: 0;
+  width: 20px;
+  display: inline; }
+
+.navbar.right ul li {
+  display: inline;
+  margin-right: 15px;
+  font-size: 14px; }
+
+.navbar.right ul li a {
+  text-decoration: none;
+  color: #2BA8C6; }
+
+.navbar.right span {
+  border: 1px solid #2BA8C6;
+  border-radius: 3px;
+  padding: 8px; }
+
+.cart {
+  color: #626262;
+  font-size: 14px;
+  display: inline;
+  margin-left: 22px; }
+
+.navbar.center {
+  margin: 30px 0 0 0; }
+
+.navbar.center ul {
+  margin-left: 147px; }
+
+.navbar.center ul li {
+  display: inline;
+  margin: 0 7px 0 7px;
+  font-size: 14px; }
+
+.navbar.center ul li a {
+  text-decoration: none;
+  color: #626262; }
+
+.categories {
+  background: #fff;
+  width: 250px; }
+
+.categories ul li {
+  list-style: none; }
+
+.categories ul li a {
+  text-decoration: none;
+  color: #2BA8C6;
+  font-size: 14px;
+  line-height: 1.5; }
+
+.itemType,
+.lowHigh,
+.colorBoxes,
+.orderOptions,
+.shopLocation,
+.regions {
+  background: #fff;
+  width: 250px; }

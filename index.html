@@ -8,9 +8,10 @@
 
 <body>
 <header>
+<div class='headerWrap'>
   <div class='etsyLogo'>Etsy</div>
   <form class='searchBar'>
-    <input type='search' placeholder='Search for items or shops'/>
+    <input type='search' placeholder='Search for items or shops' class='searchField' />
     <button class='searchbtn'>Search</button>
   </form>
 
@@ -19,11 +20,13 @@
       <li><a href='#'>Sell on Etsy</a></li>
       <li><a href='#'>Register</a></li>
       <li><a href='#'><span>Sign in</span></a></li>
-      <li><a href='#'>Cart</a></li>
+      <div class='cart'>Cart</div>
     </ul>
   </nav>
+</div>
 
   <nav class='navbar center'>
+  <hr>
     <ul>
       <li><a href='#'>Clothing & Accessories</a></li>
       <li><a href='#'>Jewelry</a></li>
@@ -34,13 +37,16 @@
       <li><a href='#'>Kids & Baby</a></li>
       <li><a href='#'>Vintage</a></li>
     </ul>
+    <hr>
   </nav>
 </header>
 
+<section class='container'>
+
 <aside class='columnLeft'>
 
-<div class='categories'>
 <h5>Show results for:</h5>
+<div class='categories'>
   <ul>
   <h5>All Categories</h5>
     <li><a href='#'>Home & Living</a></li>
@@ -120,6 +126,8 @@
     </select>
   </div>
 </aside>
+
+</section>
 
 
   <script src="bower_components/underscore/underscore-min.js"</script>
