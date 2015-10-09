@@ -104,3 +104,9 @@ hr {
 .regions {
   background: #fff;
   width: 250px; }
+
+.container {
+  display: inline-block; }
+
+.itemList {
+  display: inline-block; }

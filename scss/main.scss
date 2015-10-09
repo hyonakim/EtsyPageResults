@@ -145,9 +145,13 @@ hr {
   width: $sideBar;
 }
 
+.container {
+  display: inline-block;
+}
 
-
-
+.itemList {
+  display: inline-block;
+}
 
 
 
