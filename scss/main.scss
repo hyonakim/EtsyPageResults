@@ -6,6 +6,7 @@ $whiteColor: #fff;
 $ltGray: #CFCBC8;
 
 //Fonts
+$font12: 12px;
 $font14: 14px;
 
 //Style
@@ -119,6 +120,11 @@ hr {
   color: $grayColor;
 }
 
+.columnLeft {
+  margin-right: 0;
+  float: left;
+}
+
 .categories {
   background: $whiteColor;
   width: $sideBar;
@@ -143,21 +149,116 @@ hr {
 .regions {
   background: $whiteColor;
   width: $sideBar;
+  margin-right: 0;
 }
 
 .container {
-  display: inline-block;
+  margin: 10px 0 0 133px;
+  float: left;
+  width: 70%;
 }
 
 .itemList {
   display: inline-block;
+  width: 26%;
+  margin: 0 13px 15px 0;
+  padding-bottom: 6px;
+  border: 1px solid $ltGray;
+  border-radius: 3px;
+  background: $whiteColor;
+  position: relative;
 }
 
+.title,
+.shop,
+.pricing {
+  padding: 0 5px 3px 5px;
+  font-weight: lighter;
+  margin: 0;
+}
 
+.imageTag img {
+  width: 100%;
+  position: relative;
+}
 
+.shopDetails {
+  background: #fff;
+}
 
+.title p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; 
+  width: 214px;
+  font-size: $font14;
+  color: #606060;
+  margin: 0;
+}
 
+.shop p {
+  margin: 0;
+  background: #fff;
+}
 
+.shop p a {
+  font-size: $font12;
+  color: #AAAAAA;
+  float: left;
+  margin: 3px 0 0 0;
+  text-decoration: $textDec;
+}
 
+.pricing p {
+  font-size: $font12;
+  color: #78C042;
+  float: right;
+  margin: 0;
+}
 
+.icons {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  display: none;
+}
 
+.icons img {
+  width: 14px;
+  padding: 6px;
+  display: inline;
+  background: $whiteColor;
+  border: 1px solid $ltGray;
+  border-radius: 3px;
+}
+
+// .heart {
+//   height: 25px;
+//   width: 25px;
+//   border: 1px solid $ltGray;
+//   border-radius: 3px;
+//   background: $whiteColor;
+//   display: inline;
+// }
+
+// .burger {
+//   width: 32px;
+//   height: 25px;
+//   border: 1px solid $ltGray;
+//   border-radius: 3px;
+//   background: $whiteColor;
+//   display: inline;
+// }
+
+// .triangle {
+//   width: 0;
+//   height: 0;
+//   border-style: solid;
+//   border-width: 5px 5px 0 5px;
+//   border-color: red transparent transparent transparent;
+//   display: inline;
+// }
+
+.icons a:hover img {
+  background: #F5F5F1;
+}

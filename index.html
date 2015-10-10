@@ -41,7 +41,7 @@
   </nav>
 </header>
 
-<section class='container'>
+
 
 <aside class='columnLeft'>
 
@@ -127,21 +127,28 @@
   </div>
 </aside>
 
-</section>
+
 
 
 <div class='container'>
 <script type='text/template' id='itemTemplate'>
-<div class='itemList'
-<div class='imageTag'>
-<img src='<%= Images[0].url_170x135 %>'>
-</div>
-<div class='pricing'>
-<h3>$<%= price %><%= currency_code %></h3>
-</div>
-<div class='description'>
-<p><%= description %></p>
-</div>
+<div class='itemList'>
+  <div class='imageTag'>
+    <a href='#'><img src='<%= Images[0].url_170x135 %>'></a>
+  </div>
+  <div class='icons'>
+      <a href='#'><img src='images/heart.png'></a>
+      <a href='#'><img src='images/hamburger.png'></a>
+  </div>
+  <div class='title'>
+    <p><%= title %></p>
+  </div>
+  <div class='shop'>
+    <p><a href='#'><%= Shop.shop_name %></a></p>
+  </div>
+  <div class='pricing'>
+    <p>$<%= price %><%= currency_code %></p>
+  </div>
 </div>
 </script>
 </div>

@@ -83,6 +83,10 @@ hr {
   text-decoration: none;
   color: #626262; }
 
+.columnLeft {
+  margin-right: 0;
+  float: left; }
+
 .categories {
   background: #fff;
   width: 250px; }
@@ -103,10 +107,77 @@ hr {
 .shopLocation,
 .regions {
   background: #fff;
-  width: 250px; }
+  width: 250px;
+  margin-right: 0; }
 
 .container {
-  display: inline-block; }
+  margin: 10px 0 0 133px;
+  float: left;
+  width: 70%; }
 
 .itemList {
-  display: inline-block; }
+  display: inline-block;
+  width: 26%;
+  margin: 0 13px 15px 0;
+  padding-bottom: 6px;
+  border: 1px solid #CFCBC8;
+  border-radius: 3px;
+  background: #fff;
+  position: relative; }
+
+.title,
+.shop,
+.pricing {
+  padding: 0 5px 3px 5px;
+  font-weight: lighter;
+  margin: 0; }
+
+.imageTag img {
+  width: 100%;
+  position: relative; }
+
+.shopDetails {
+  background: #fff; }
+
+.title p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 214px;
+  font-size: 14px;
+  color: #606060;
+  margin: 0; }
+
+.shop p {
+  margin: 0;
+  background: #fff; }
+
+.shop p a {
+  font-size: 12px;
+  color: #AAAAAA;
+  float: left;
+  margin: 3px 0 0 0;
+  text-decoration: none; }
+
+.pricing p {
+  font-size: 12px;
+  color: #78C042;
+  float: right;
+  margin: 0; }
+
+.icons {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  display: none; }
+
+.icons img {
+  width: 14px;
+  padding: 6px;
+  display: inline;
+  background: #fff;
+  border: 1px solid #CFCBC8;
+  border-radius: 3px; }
+
+.icons a:hover img {
+  background: #F5F5F1; }
