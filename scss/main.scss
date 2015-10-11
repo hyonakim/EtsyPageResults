@@ -1,28 +1,37 @@
 //Colors
 $grayColor: #626262;
 $orangeColor: #F56400;
-$turqColor: #2BA8C6;
+$turqColor: #0092B5;
 $whiteColor: #fff;
-$ltGray: #CFCBC8;
+$ltGray: #E1E3DF;
 
 //Fonts
 $font12: 12px;
+$font13: 13px;
 $font14: 14px;
 
 //Style
 $textDec: none;
+$lineHeight: 1.5;
 
 //Width of Containers
 $sideBar: 250px;
 
 body {
   background: #F5F5F1;
+  line-height: $lineHeight;
 }
 
 header {
   position: relative;
   background: $whiteColor;
+  
+  .headerWrap {
+    margin-top: 0;
+    padding-top: 37px;
+  }
 }
+
 
 hr {
   height:0; 
@@ -53,8 +62,9 @@ hr {
 
 .searchField {
   width: 250px;
-  padding: 6px;
+  padding: 9px;
   border: none;
+  font-size: $font14;
 }
 
 .searchbtn {
@@ -63,6 +73,7 @@ hr {
   border: 1px solid #2E98B1;
   background: $turqColor;
   color: white;
+  font-size: $font14;
 }
 
 .navbar.right {
@@ -113,6 +124,7 @@ hr {
   display: inline;
   margin: 0 7px 0 7px;
   font-size: $font14;
+  font-weight: lighter;
 }
 
 .navbar.center ul li a {
@@ -121,46 +133,185 @@ hr {
 }
 
 .columnLeft {
-  margin-right: 0;
+  margin: 33px 0 0 0;
   float: left;
 }
+  .columnLeft {
+    color: #555555;
+  }
 
-.categories {
+.leftHeading {
+  margin: 0 0 0 155px;
+}
+
+.leftSide.Top {
   background: $whiteColor;
   width: $sideBar;
+  margin: 8px 0 30px 155px;
+  border: 1px solid $ltGray;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 0 #CBCCC9;
+  ul {
+    padding: 1px 0 0 12px;
+  }
+  .heading5 {
+    margin: 0;
+  }
+    ul li {
+      list-style: none;
+      margin-left: 12px;
+        a {
+          text-decoration: $textDec;
+          color: $turqColor;
+          font-size: $font13;
+          line-height: $lineHeight;
+        }
+    }
+
 }
 
-.categories ul li {
-  list-style: none;
-}
-
-.categories ul li a {
-  text-decoration: $textDec;
-  color: $turqColor;
-  font-size: $font14;
-  line-height: 1.5;
-}
-
-.itemType,
-.lowHigh,
-.colorBoxes,
-.orderOptions,
-.shopLocation,
-.regions {
+.leftSide.Bottom {
   background: $whiteColor;
   width: $sideBar;
-  margin-right: 0;
+  margin: 8px 0 0 155px;
+  padding-bottom: 20px;
+  border: 1px solid $ltGray;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 0 #CBCCC9;
+    a {
+      text-decoration: $textDec;
+      color: $turqColor;
+      font-size: $font13;
+      line-height: $lineHeight;
+    }
+    .sideBottom {
+      padding: 13px 0 0 12px;
+      }
+    .heading5 {
+      margin: 0;
+    }
+    .sideLine {
+      width: 218px;
+      margin: 18px 0;
+    }
+      .radioItems {
+        font-size: $font13;
+        color: $turqColor;
+        }
+         label {
+            cursor: pointer;
+            position: relative;
+            padding-left: 6px;
+            margin-right: 15px;
+            font-size: 13px;
+            }
+          label:hover {
+            text-decoration: underline;
+            }
+      .priceBox {
+        width: 72px;
+        height: 34px;
+        border: 1px solid $ltGray;
+        border-radius: 3px;
+      }
+        .priceBox:before {
+          content: '$';
+        }
+      .priceBtn {
+        width: 38px;
+        height: 38px;
+        border: 1px solid $ltGray;
+        border-radius: 3px;
+        background: $whiteColor;
+        position: absolute;
+        left: 352px;
+        padding: 0;
+      }
+        .priceBtn:after {
+          content: '';
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 7px 0 7px 7px;
+          border-color: transparent transparent transparent #555555;
+          position: absolute;
+          top: 11px;
+          left: 15px;
+        }
+      .btnColor {
+        width: 21px;
+        height: 22px;
+        border: 1px solid $ltGray;
+        border-radius: 3px;
+      }
+        .btnColor.red {
+          background: #F70029;
+        }
+        .btnColor.orange {
+          background: #FF7F00;
+        }
+        .btnColor.yellow {
+          background: #F3CC09;
+        }
+        .btnColor.green {
+          background: #08C209;
+        }
+        .btnColor.skyblue {
+          background: #0ACCF3;
+        }
+        .btnColor.purple {
+          background: #A60AF3;
+        }
+        .btnColor.black {
+          background: #000000;
+        }
+        .btnColor.white {
+          background: #FFFFFF;
+        }
+      .order span {
+        color: $turqColor;
+        font-size: $font13;
+        padding-left: 6px;
+        cursor: pointer;
+      }
+        .order span:hover {
+          text-decoration: underline;
+        }
+      .shopLoc span {
+        color: $turqColor;
+        font-size: $font13;
+        padding-left: 6px;
+      }
+      .shopLoc span {
+            cursor: pointer;
+            font-size: 13px;
+            }
+        .shopLoc span:hover,
+        .shopLoc a:hover {
+          text-decoration: underline;
+          }
+      .shipTo {
+        background: $whiteColor;
+        width: 226px;
+        height: 30px;
+        border: 1px solid $ltGray;
+      }
 }
+
+
+
+
+
 
 .container {
-  margin: 10px 0 0 133px;
+  margin: 59px 0 0 25px;
   float: left;
-  width: 70%;
+  width: 58%;
 }
 
 .itemList {
   display: inline-block;
-  width: 26%;
+  width: 30%;
   margin: 0 13px 15px 0;
   padding-bottom: 6px;
   border: 1px solid $ltGray;

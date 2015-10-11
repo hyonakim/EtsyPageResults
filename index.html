@@ -20,7 +20,7 @@
       <li><a href='#'>Sell on Etsy</a></li>
       <li><a href='#'>Register</a></li>
       <li><a href='#'><span>Sign in</span></a></li>
-      <div class='cart'>Cart</div>
+      <div class='cart'><img src='images/cart.png' class='cartIcon'>Cart</div>
     </ul>
   </nav>
 </div>
@@ -45,10 +45,10 @@
 
 <aside class='columnLeft'>
 
-<h5>Show results for:</h5>
-<div class='categories'>
+<h5 class='leftHeading'>Show results for:</h5>
+  <div class='leftSide Top'>
   <ul>
-  <h5>All Categories</h5>
+  <h5 class='heading5'>All Categories</h5>
     <li><a href='#'>Home & Living</a></li>
     <li><a href='#'>Art & Collectibles</a></li>
     <li><a href='#'>Weddings</a></li>
@@ -65,69 +65,78 @@
     <li><a href='#'>Toys & Games</a></li>
     <li><a href='#'>Pet Supplies</a></li>
   </ul>
-</div>
-
-<h5>Refine your search</h5>
-
-<div class='itemType'>
-<h5>Item Type</h5>
-  <form class='radioItems'>
-    <input type='radio' name='item' value='All Items'>All Items</br>
-    <input type='radio' name='item' value='Handmade'>Handmade</br>
-    <input type='radio' name='item' value='Vintage'>Vintage</br>
-  </form>
-</div>
-
-<div class='lowHigh'>
-  <h5>Price</h5>
-    <form>
-      <input type='price' placeholder='Low'>to
-      <input type='price' placeholder='High'>
-      <button></button>
-    </form>
-</div>
-
-  <div class='colorBoxes'>
-    <h5>Filter by Color</h5>
-    <button class='btnColor red'><a href='#'></a></button>
-    <button class='btnColor orange'><a href='#'></a></button>
-    <button class='btnColor yellow'><a href='#'></a></button>
-    <button class='btnColor green'><a href='#'></a></button>
-    <button class='btnColor skyblue'><a href='#'></a></button>
-    <button class='btnColor purple'><a href='#'></a></button>
-    <button class='btnColor black'><a href='#'></a></button>
-    <button class='btnColor white'><a href='#'></a></button>
   </div>
 
-  <div class='orderOptions'>
-    <h5>Ordering Options</h5>
-    <form action="demo_form.asp">
-      <input type='checkbox' name='ordering'>Accepts Etsy Gift Cards</br>
-      <input type='checkbox' name='ordering'>Customizable
+
+<h5 class='leftHeading'>Refine your search</h5>
+
+<div class='leftSide Bottom'>
+<div class='sideBottom'>
+<h5 class='heading5'>Item Type</h5>
+  <form class='radioItems'>
+    <input type='radio' name='item' value='All Items'> 
+    <label>All Items</label></br>
+    <input type='radio' name='item' value='Handmade'>
+    <label>Handmade</label></br>
+    <input type='radio' name='item' value='Vintage'> 
+    <label>Vintage</label></br>
+  </form>
+
+<hr class='sideLine'>
+
+  <h5 class='heading5'>Price</h5>
+    <form class='pricing'>
+      <input type='price' placeholder='$Low' class='priceBox'> to
+      <input type='price' placeholder='$High'class='priceBox'>
+      <button class='priceBtn'></button>
     </form>
 
-  <div class='shopLocation'>
-    <h5>Shop Location</h5>
-    <form>
-      <input type='radio' name='location' value='Anywhere'>Anywhere</br>
-      <input type='radio' name='location' value='United States'>United States</br>
+<hr class='sideLine'>
+
+    <h5 class='heading5'>Filter by Color</h5>
+      <button class='btnColor red'><a href='#'></a></button>
+      <button class='btnColor orange'><a href='#'></a></button>
+      <button class='btnColor yellow'><a href='#'></a></button>
+      <button class='btnColor green'><a href='#'></a></button>
+      <button class='btnColor skyblue'><a href='#'></a></button>
+      <button class='btnColor purple'><a href='#'></a></button>
+      <button class='btnColor black'><a href='#'></a></button>
+      <button class='btnColor white'><a href='#'></a></button>
+
+<hr class='sideLine'>
+
+    <h5 class='heading5'>Ordering Options</h5>
+    <form class="order">
+      <input type='checkbox' name='ordering'><span>Accepts Etsy Gift Cards</span></br>
+      <input type='checkbox' name='ordering'><span>Customizable</span>
+    </form>
+
+<hr class='sideLine'>
+
+    <h5 class='heading5'>Shop Location</h5>
+    <form class='shopLoc'>
+      <input type='radio' name='location' value='Anywhere'>
+      <span>Anywhere</span></br>
+      <input type='radio' name='location' value='United States'>
+      <span>United States</span></br>
       <a href='#'>Choose a custom location</a>
     </form>
-  </div>
 
-  <div class='regions'>
-    <h5>Ship To</h5>
+<hr class='sideLine'>
+
+    <h5 class='heading5'>Ship To</h5>
     <select class='shipTo'>
+    <div class='dropDown'>
       <option value='US'>United States</option>
       <option value='EU'></option>
       <option value='Asia'>Asia</option>
       <option value='South America'>South America</option>
       <option value='Africa'>Africa</option>
+      </div>
     </select>
+    </div>
   </div>
 </aside>
-
-
 
 
 <div class='container'>
@@ -159,5 +168,6 @@
  
   <script src="js/etsydata.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 </html>
